@@ -32,7 +32,6 @@ def math_expression(k):
     return math_expression
 
 
-a = []
 dict_results = {}
 print(f'Переберем {3**9} возможных математических выражений.')
 quantity = 3**9
