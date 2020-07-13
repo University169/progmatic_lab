@@ -39,14 +39,11 @@ quantity = 3**9
 for i in range(quantity):
     expression = math_expression(i)
     result = eval(expression)
-    if result in dict_results:
-        dict_results[result].append(expression)
-    else:
-        dict_results[result] = [expression]
+    dict_results[result] = expression
 print(f'Количество возможных различных значений = {len(dict_results)}.')
 expected_result = int(input('Укажите ожидаемый результат: ')) # можно подставить любое значение
 if expected_result in dict_results:
-    print(f'Результат {expected_result} дают выражения {dict_results[expected_result]}')
+    print(f'Результат {expected_result} дает выражение {dict_results[expected_result]}')
 else:
     print(f'К сожаление не существует выражения, результатом которого являлось бы число {expected_result}.')
 
