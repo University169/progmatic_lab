@@ -32,11 +32,11 @@ def math_expression(k):
 
 
 def simple_solution(expected_result):
-    for i in range(3 ** 9):
+    for i in range(3 ** 9):  # перебираем и возвращаем первое подходящее выражение
         expression = math_expression(i)
         if eval(expression) == expected_result:
             return f'Результат {expected_result} дает выражение {expression}.'
-    return f'К сожаление не существует выражения, результатом которого являлось бы число {expected_result}.'
+    return f'К сожалению не существует выражения, результатом которого являлось бы число {expected_result}.'
 
 
 print(simple_solution(200))

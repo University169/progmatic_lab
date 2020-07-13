@@ -35,7 +35,7 @@ def simple_solution(expected_result):
         expression = math_expression(i)
         if eval(expression) == expected_result:
             return f'Результат {expected_result} даёт выражение {expression}.'
-    return f'К сожаление не существует выражения, результатом которого являлось бы число {expected_result}.'
+    return f'К сожалению не существует выражения, результатом которого являлось бы число {expected_result}.'
 
 
 print(simple_solution(200))
